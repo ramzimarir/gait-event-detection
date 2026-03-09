@@ -1,0 +1,39 @@
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── Virtual environments ──────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── IDE ───────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Proprietary data (LISSI lab — not redistributable)
+data/
+
+# ── Model weights (too large for GitHub) ─────────
+outputs/models/
+
+# ── Per-subject result CSVs (derived from proprietary data)
+outputs/cnn/Subject_*.csv
+outputs/lstm/Subject_*.csv
+outputs/tcn/Subject_*.csv
+outputs/cnn/evaluation_details.csv
+outputs/lstm/evaluation_details.csv
+outputs/tcn/evaluation_details.csv
+
+# ── Keep these (aggregate results + visuals) ──────
+# outputs/*/evaluation_summary.csv  ← tracked
+# outputs/plots/*.png               ← tracked
